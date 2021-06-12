@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graphics Card</title>
+  <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 14px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 50px;
+  text-align: center;
+
+ /* background: white;*/
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p {
+   color: #ffffff;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+    font-size: 1.4em;
+
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 15px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+         #copyright a
+{
+	text-decoration: none;
+	color: #f1f1f1ab;
+    margin-top: 10px;
+    font-size: 1.3em;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+  text-align: center;
+  background: #f1f1f1;
+  margin-top: 10px;
+  
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.80em;
+  color: rgba(255,255,255,0.8);
+
+}
+.logo a{
+    text-decoration: none;
+  color: #ffffff;
+
+}
+
+.logo1 {
+    padding: 5px;
+
+  color: #ffffff;
+    font-size: 1.5em;
+
+
+}
+.logo{
+display:inline-block;
+  font-size: 4.5em;
+  text-transform: none;
+  font-weight: 700;
+  color: #ffffff;
+
+
+
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+             #extra a
+{
+	text-decoration: none;
+    font-size: 0.80em; 
+    letter-spacing: 0.1em;    
+	color: #2776B1;
+    
+}
+  
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header" style="background-image: url('banner.jpg');">
+  <h1 class = "logo"><a href="index.html"> eClouds</a> </h1>
+  <p  class = "logo1">Best place to visit before choosing PC parts for your new gaming PC</p>
+</div>
+
+<div class="topnav">
+    <a href="cpu.html">CPU</a>
+    <a href="GPU.html">Graphics Card</a>
+    <a href="MB.html">Motherboard</a>
+    <a href="RAM.html">RAM</a>
+    <a href="Storage.html">Storage</a>
+    <a href="PSU.html">Power Supply</a>
+    <a href="case.html">Case</a>
+  <a href="https://pcpartpicker.com/" style="float:right">Outside soruce</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Graphics Card (GPU)</h2>
+      <h5>First step before choosing pc hardware, April 12, 2021</h5>
+       
+       <img src="GPU.jpg" style="height:200px;">
+ <p>A graphics card (GPU) typically handles and generates a feed that outputs to a monitor. If you’re only consuming media and browsing the web, you don’t need a powerful GPU. However, if you’re gaming, editing videos, designing 3D art , or generating complex scenes, and want the best experience, you should consider allocating a good chunk of your budget to this component.</p>
+      <p>You can see our recomndation next:</p>
+    </div>
+
+ <div class="card">
+       <h2>You can choose between Price Tier of GPU :</h2>
+      
+    
+<table border="1" id = "ratable" style="width:50%;">
+  <tr>
+    <th>Price Tier</th>
+    <th>Recommended Graphics Card</th>
+  </tr>
+  <tr>
+    <td>$200-$300</td>
+    <td><center>GeForce 1660Ti</center></td>
+  </tr>
+  <tr>
+    <td>$500-$550</td>
+    <td><center>GTX 3070</center></td>
+  </tr>
+  <tr>
+    <td>$900-$1250</td>
+    <td><center>GTX 3090</center></td>
+  </tr>
+ 
+</table>
+
+</div>
+
+  </div>
+  <div class="rightcolumn">
+        <div class="card">
+  <h2>Our objective:</h2>
+          <p>We in EClouds hope to make it eaier to udertsand what you need to know before buying or building gaming PC.</p>
+    </div>
+
+        <div class="card">
+      <h2>Our strategy:</h2>
+          <p>We choose to divide every Pc to one of three category:  </p>
+          <ul> <li>Low Budget PC</li>
+               <li>Budget PC</li>
+               <li>High-end PC</li>
+
+        </ul>
+    </div>
+
+  <div id="extra">
+                <ul>
+                    <li><a href="mailto:3910628@stu.rcyci.edu.sa">ABDULRAHMAN ALTHOMALI</a></li>
+                    <li><a href="mailto:3720883@stu.rcyci.edu.sa">RAGHEED ALJEHANI</a></li>
+                </ul>
+                </div>
+            </div>
+   
+    <div class="card">
+      <h3>Follow us</h3>
+      <p>Twitter:<a href="https://twitter.com/YUC_HOTLINE">@YUC_HOTLINE</a> </p>
+    </div>
+  </div>
+</div>
+
+    <div class="footer" style="background-image: url('images/fotter.jpeg');">
+        <div id="copyright">
+            <p>
+                &copy; UNTITLED. ALL RIGHTS RESERVED. | DESIGN BY <a href="mailto:3720883@stu.rcyci.edu.sa">RAGHEED
+                    ALJEHANI</a> & <a href="mailto:3910628@stu.rcyci.edu.sa">ABDULRAHMAN ALTHOMALI</a>.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>

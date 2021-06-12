@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+  <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 14px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 50px;
+  text-align: center;
+
+ /* background: white;*/
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p {
+   color: #ffffff;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+    font-size: 1.4em;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 15px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+         #copyright a
+{
+	text-decoration: none;
+	color: #f1f1f1ab;
+    margin-top: 10px;
+    font-size: 1.3em;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+  text-align: center;
+  background: #f1f1f1;
+  margin-top: 10px;
+  
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.80em;
+  color: rgba(255,255,255,0.8);
+
+}
+.logo a{
+    text-decoration: none;
+  color: #ffffff;
+
+}
+
+.logo1 {
+    padding: 5px;
+
+  color: #ffffff;
+    font-size: 1.5em;
+
+
+}
+.logo{
+display:inline-block;
+  font-size: 4.5em;
+  text-transform: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+	           #extra a
+{
+	text-decoration: none;
+    font-size: 0.80em; 
+    letter-spacing: 0.1em;    
+	color: #2776B1;
+    
+}
+	
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body >
+
+    <div class="header" style="background-image: url(images/banner.jpg);;">
+        <h1 class="logo"><a href="index.html"> eClouds </a> </h1>
+        <p class="logo1">Best place to visit before choosing PC parts for your new PC</p>
+    </div>
+
+<div class="topnav">
+    <a href="cpu.html">CPU</a>
+    <a href="GPU.html">Graphics Card</a>
+    <a href="MB.html">Motherboard</a>
+    <a href="RAM.html">RAM</a>
+    <a href="Storage.html">Storage</a>
+    <a href="PSU.html">Power Supply</a>
+    <a href="case.html">Case</a>
+  <a href="https://pcpartpicker.com/" style="float:right">Outside soruce</a>
+</div>
+
+<div class="row" >
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>You need a budget before buying new pc!!</h2>
+      <h5>First step before choosing pc hardware, April 12, 2021</h5>
+      <p>A reliable home PC doesn't have to cost you four figures...far from it. Most of our budget-PC favorites cost less than $600, and some are hundreds less than that. Check out our top tested picks among conventional towers, compact PCs, and more.</p>
+      <p>You can see our recomndation next:</p>
+    </div>
+    <div class="card">
+      <h2>You can choose between 3 tipes of PC budgets:</h2>
+      
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = " In this category, we dicided the price range of the buget is less than 400$ "'>Low Budget PC</button>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "In this category, we dicided the price range of the buget is between 400$ and 700$  "'>Budget PC</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "In this category, we dicided the price range of the buget is above 1000$"'> High-end PC</button>
+
+<p id="demo"> Here some explation for every type</p>
+
+
+    </div>
+
+    <div class="card">
+      <h2>Here is our recomndation!!</h2>
+
+<table border="1" style="width:90%">
+  
+  <tr>
+
+  <th>Low Budget PC</th>
+  <th><p>Budget PC</p> </th>
+
+  <th><p>High-end PC</p></th>
+
+</tr>
+<tr>
+
+  
+<th>
+    <ul>
+ <li>CPU:   Intel Core i3-10100 </li>
+ <li>MOBO:  ASRock H410M  </li>
+ <li>GPU:   XFX RX 550 4GB  </li>
+ <li>RAM:   Patriot Signature 8GB</li> 
+ <li>SSD:   PNY 240GB </li>
+ <li>CASE:  Rosewill FBM-X2</li> 
+ <li>Power supply: Gigabyte 650W</li> 
+
+</ul>
+</th>
+  <th>
+    <ul>
+ <li>CPU:   Intel Core i5-10400 </li>
+ <li>MOBO:  ASRock H410M  </li>
+ <li>GPU:   PowerColor RX 5600 XT  </li>
+ <li>RAM:   OLOy 16GB</li> 
+ <li>SSD:   ADATA 480GB </li>
+ <li>CASE:  AeroCool Cylon</li> 
+ <li>Power supply: Cooler Master 650W</li> 
+
+</ul>
+   </th>
+
+  <th>
+    <ul>
+ <li>CPU:   Intel Core i7-10700K </li>
+ <li>MOBO:  Deep Cool 240mm  </li>
+ <li>GPU:   MSI Z490  </li>
+ <li>RAM:   ZOTAC RTX 2070 SUPER</li> 
+ <li>SSD:   OLOy 16GB </li>
+ <li>CASE:  Corsair iCUE 220T</li> 
+ <li>Power supply: Corsair CX750M</li> 
+
+</ul>
+  </th>
+
+</tr>
+
+<tr>
+  <th>
+    
+   Grand Total: $370 
+  </th>
+    <th>
+    
+  Grand Total: $670 
+  </th>
+    <th>
+    
+   Grand Total: $1500
+  </th>
+
+</tr>
+<tr>
+  
+<th>
+
+<a href="https://www.amazon.com/gp/aws/cart/add.html?AssociateTag=thowisguy-20&ASIN.1=B086MMRW87&Quantity.1=1&ASIN.2=B0895L5MGN&Quantity.2=1&ASIN.3=B08C7BV6VK&Quantity.3=1&ASIN.4=B07CVDYH5Q&Quantity.4=1&ASIN.5=B0719D9YL7&Quantity.5=1&ASIN.6=B07MDJ2RW8&Quantity.6=1&ASIN.7=B079SSKYWB&Quantity.7=1">Amazon Shopping Cart</a></th>
+  <th><a href="https://www.amazon.com/gp/aws/cart/add.html?AssociateTag=thowisguy-20&ASIN.1=B086MN38Q2&Quantity.1=1&ASIN.2=B0895L5MGN&Quantity.2=1&ASIN.3=B089CSRBPD&Quantity.3=1&ASIN.4=B083NPX9TJ&Quantity.4=1&ASIN.5=B07PGC3JKQ&Quantity.5=1&ASIN.6=B079P1VBDY&Quantity.6=1&ASIN.7=B074ZKXM72&Quantity.7=1">Amazon Shopping Cart</a></th>
+
+  <th><a href="https://www.amazon.com/gp/aws/cart/add.html?AssociateTag=thowisguy-20&ASIN.1=B086MMS6FV&Quantity.1=1&ASIN.2=B0829RTMKY&Quantity.2=1&ASIN.3=B0876J8436&Quantity.3=1&ASIN.4=B07XSPWMP9&Quantity.4=1&ASIN.5=B083NPX9TJ&Quantity.5=1&ASIN.6=B077SF8KMG&Quantity.6=1&ASIN.8=B07DRVHBWK&Quantity.8=1&ASIN.9=B074ZKXM72&Quantity.9=1">Amazon Shopping Cart</a></th>
+
+</tr>
+</table>
+
+    </div>
+
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+       <h2>Our objective:</h2>
+          <p>We in EClouds hope to make it eaier to udertsand what you need to know before buying or building gaming PC.</p>
+    </div>
+
+        <div class="card">
+      <h2>Our strategy:</h2>
+          <p>We choose to divide every Pc to one of three category:  </p>
+          <ul> <li>Low Budget PC</li>
+               <li>Budget PC</li>
+               <li>High-end PC</li>
+
+        </ul>
+    </div>
+
+               <div class="card">
+                <h2>About Us</h2>
+                <p> We in eClouds are dedicated to giving you the very best of knowledge, with a focus on dependability, reliability and uniqueness.
+                eClouds has come a long way from its beginnings in a home office. We now serve customers all over the world and are
+                thrilled to be a part of the computer industry.
+                <br>               
+                We hope you enjoy the visit to our website. If you have any questions or comments, please
+                don't hesitate to contact us.
+                <br>
+                Sincerely,
+            </p>
+                <div id="extra">
+                <ul>
+                    <li><a href="mailto:3910628@stu.rcyci.edu.sa">ABDULRAHMAN ALTHOMALI</a></li>
+                    <li><a href="mailto:3720883@stu.rcyci.edu.sa">RAGHEED ALJEHANI</a></li>
+                </ul>
+                </div>
+            </div>
+   
+    <div class="card">
+      <h3>Follow us</h3>
+      <p>Twitter:<a href="https://twitter.com/YUC_HOTLINE">@YUC_HOTLINE</a> </p>
+    </div>
+  </div>
+</div>
+    <div class="footer" style="background-image: url('images/fotter.jpeg');">
+        <div id="copyright">
+            <p>
+                &copy; UNTITLED. ALL RIGHTS RESERVED. | DESIGN BY <a href="mailto:3720883@stu.rcyci.edu.sa">RAGHEED
+                    ALJEHANI</a> & <a href="mailto:3910628@stu.rcyci.edu.sa">ABDULRAHMAN ALTHOMALI</a>.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

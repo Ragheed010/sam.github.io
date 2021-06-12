@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power Supply</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 14px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 50px;
+            text-align: center;
+
+            /* background: white;*/
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        .header p {
+            color: #ffffff;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            font-size: 1.4em;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 18px 24px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 15px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #copyright a {
+            text-decoration: none;
+            color: #f1f1f1ab;
+            margin-top: 10px;
+            font-size: 1.3em;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        /* Table */        
+        #ratable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ratable td, #ratable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#ratable tr:nth-child(even){background-color: #f2f2f2;}
+
+#ratable tr:hover {background-color: #ddd;}
+
+#ratable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+        /* Footer */
+        .footer {
+            padding: 10px;
+            text-align: center;
+            background: #f1f1f1;
+            margin-top: 10px;
+
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            font-size: 0.80em;
+            color: rgba(255, 255, 255, 0.8);
+
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+
+        .logo1 {
+            padding: 5px;
+
+            color: #ffffff;
+            font-size: 1.5em;
+
+
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 4.5em;
+            text-transform: none;
+            font-weight: 700;
+            color: #ffffff;
+
+
+
+        }
+
+        #extra a {
+        text-decoration: none;
+        font-size: 0.80em;
+        letter-spacing: 0.1em;
+        color: #2776B1;
+
+        }
+
+        #extra1 a {
+            text-decoration: none;
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            color: #2776B1;
+
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header" style="background-image: url(images/banner.jpg);;">
+        <h1 class="logo"><a href="index.html"> eClouds </a> </h1>
+        <p class="logo1">Best place to visit before choosing PC parts for your new PC</p>
+    </div>
+
+    <div class="topnav">
+		<a href="cpu.html">CPU</a>
+		<a href="GPU.html">Graphics Card</a>
+		<a href="MB.html">Motherboard</a>
+		<a href="RAM.html">RAM</a>
+		<a href="Storage.html">Storage</a>
+		<a href="PSU.html">Power Supply</a>
+		<a href="case.html">Case</a>
+        <a href="https://pcpartpicker.com/" style="float:right">Outside soruce</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Power Supply</h2>
+                <h5>Steps before choosing pc hardware, April 13, 2021</h5>
+
+                <img src="images/PSU.jpeg" alt= "Corsair AX760W PSU" style="height:250px">
+
+                <hr>
+                <p id="demo">
+                    All the components in your system need a reliable, steady supply of power. A Power Supply Unit (PSU) does just that!
+                <p id="demo">
+                    They come in modular, semi-modular, and regular variants. If you’re pretty nitpicky about cable management and would
+                    rather avoid any unused cables, pick a modular or semi-modular PSU. They’ll ensure that you use only the wires that your
+                    system needs.
+                    </p>
+                    A widespread mistake is compromising on the quality of a power supply to focus your budget on other aspects of the
+                    system. Don’t do this. A cheap power supply can even cause permanent damage to your components.
+                    <div id="extra1">
+                    <p id="demo">
+                    We recommend shopping for a 500W 80-Plus Bronze Rated PSU at the very least. Use this popular PSU tier list to lock down
+                    a choice depending on availability in your region; use this <a href="https://outervision.com/power-supply-calculator">power supply calculator</a>
+                    to check the wattage you’ll need for
+                    your system.
+                </p>
+                </div>
+
+            <table id="ratable">
+                <tr>
+                    <th><strong>80 Plus PSU Rating</strong></th>
+                    <th><strong>What Does it Mean?</strong></th>
+                </tr>
+                <tr>
+                    <td><strong>80 Plus</strong></td>
+                    <td>At least 80% efficiency at 20%, 50%, and 100% load.</td>
+                </tr>
+                <tr>
+                    <td><strong>80 Plus Bronze</strong></td>
+                    <td>At least 82% efficiency at 20% load, 85% at 50% load, and 82% at 100% load.</td>
+                </tr>
+                <tr>
+                    <td><strong>80 Plus Silver</strong></td>
+                    <td>At least 85% efficiency at 20% load, 88% at 50% load, and 85% at 100% load.</td>
+                </tr>
+                <tr>
+                    <td><strong>80 Plus Gold</strong></td>
+                    <td>At least 87% efficiency at 20% load, 90% at 50% load, and 87% at 100% load.</td>
+                </tr>
+                <tr>
+                    <td><strong>80 Plus Platinum</strong></td>
+                    <td>At least 90% efficiency at 20% load, 92% at 50% load, and 89% at 100% load.</td>
+                </tr>
+                <tr>
+                    <td><strong>80 Plus Titanium</strong></td>
+                    <td>At least 92% efficiency at 20% load, 94% at 50% load, and 90% at 100% load.</td>
+                </tr>
+            </table>
+
+            <p id="demo">
+                As you can see, unless you’re running a very power-hungry system, the power savings at each tier will be minimal.
+                For most users, an 80 Plus Bronze PSU is the sweet spot between quality and price. If you do want to spend a bit more, We
+                recommend a<strong> jump to gold and above</strong>.
+                Don’t bother with silver unless you’re getting a fantastic deal on one.
+            </p>
+
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Our Objictive:</h2>
+                <p>We in eClouds hope to make it easier to udertsand what you need to know before choosing between many
+                    smailar PC components </p>
+            </div>
+
+            <div class="card">
+                <h2>Our strategy:</h2>
+                <p>We choose to divide every Pc to one of three category: </p>
+                <ul>
+                    <li>Low Budget PC</li>
+                    <li>Budget PC</li>
+                    <li>Hight-end PC</li>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>About Us</h2>
+                <p> We in eClouds are dedicated to giving you the very best of knowledge, with a focus on dependability,
+                    reliability and uniqueness.
+                    eClouds has come a long way from its beginnings in a home office. We now serve customers all over
+                    the world and are
+                    thrilled to be a part of the computer industry.
+                    <br>
+                    We hope you enjoy the visit to our website. If you have any questions or comments, please
+                    don't hesitate to contact us.
+                    <br>
+                    Sincerely,
+                </p>
+                <div id="extra">
+                    <ul>
+                        <li><a href="mailto:3910628@stu.rcyci.edu.sa">ABDULRAHMAN ALTHOMALI</a></li>
+                        <li><a href="mailto:3720883@stu.rcyci.edu.sa">RAGHEED ALJEHANI</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Follow us</h3>
+                <p>Twitter:<a href="https://twitter.com/yuc_hotline">https://twitter.com/yuc_hotline</a> </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" style="background-image: url('images/fotter.jpeg');">
+        <div id="copyright">
+            <p>
+                &copy; UNTITLED. ALL RIGHTS RESERVED. | DESIGN BY <a href="mailto:3720883@stu.rcyci.edu.sa">RAGHEED
+                    ALJEHANI</a> & <a href="mailto:3910628@stu.rcyci.edu.sa">ABDULRAHMAN ALTHOMALI</a>.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

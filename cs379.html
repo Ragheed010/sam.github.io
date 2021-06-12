@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  background-image: url(banner.jpg);
+  text-align: center;
+
+ /* background: white;*/
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p {
+   color: #ffffff;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+.logo a{
+    text-decoration: none;
+  color: #ffffff;
+
+}
+
+.logo{
+display:inline-block;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+
+
+
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 class = "logo"><a href="index.html"> EClouds</a> </h1>
+  <p>Best place to visit before choosing PC parts for your new PC</p>
+</div>
+
+<div class="topnav">
+  <a href="">CPU</a>
+  <a href="GPU.html">Graphics Card</a>
+  <a href="https://eclouds.ml/MB.html">CPU</a>
+  <a href="">Motherboard</a>
+    <a href="#">RAM</a>
+  <a href="#">Storage</a>
+  <a href="#">Supply</a>
+  <a href="#">Case</a>
+  <a href="https://pcpartpicker.com/" style="float:right">Outside soruce</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>You need a budget before buying new pc!!</h2>
+      <h5>First step before choosing pc hardware, April 12, 2021</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>A reliable home PC doesn't have to cost you four figures...far from it. Most of our budget-PC favorites cost less than $600, and some are hundreds less than that. Check out our top tested picks among conventional towers, compact PCs, and more.</p>
+      <p>You can see our recomndation next:</p>
+    </div>
+    <div class="card">
+      <h2>You can choose between 3 tipes of PC budgets:</h2>
+      
+    
+      <p id="demo">Choose one of the buttons</p>
+
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Low Budget PC"'>Low Budget PC</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = " Budget PC "'>Budget PC</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = " Hight end PC"'>Hight end PC</button>
+
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Us</h2>
+          <p>This our Assighment 3 for CS378 course: </p>
+        <ul> <li>Abdulrahman Althomali:   3910628</li>
+    <li>Ragheed Al-jehani:   3710883</li>
+        </ul>
+   
+    </div>
+   
+    <div class="card">
+      <h3>Follow us</h3>
+      <p>Twitter:<a href="https://twitter.com/YUC_HOTLINE">https://twitter.com/YUC_HOTLINE</a> </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Abdulrahman Althomali | Ragheed Al-jehani</h2>
+</div>
+
+</body>
+</html>
